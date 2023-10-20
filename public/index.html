@@ -1,0 +1,30 @@
+<html> 
+  <form action="/get1">
+    <input type="submit" value="GET1"><br>
+    <label for="fname">fname</label>
+    <input type="text" id="fname" name="fname" value="Barack"><br>
+    <label for="lname">lname</label>
+    <input type="text" id="lname" name="lname" value="Obama">
+  </form>
+
+  <button onclick = "get2()">GET2</button><br>
+  <label for="ffname">fname</label>
+  <input type="text" id="ffname" name="ffname" value="Donald"><br>
+  <label for="llname">lname</label>
+  <input type="text" id="llname" name="llname" value="Trump">
+  <script>
+    function get2() {
+      ffname = document.getElementById('ffname').value;
+      llname = document.getElementById('llname').value;
+      window.location.href = `/get2/${ffname}/${llname}`;
+    }
+  </script>
+
+  <form action="/post1" method="post">
+    <input type="submit" value="POST"><br>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="Joe"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" value="Biden">
+  </form>
+</html>

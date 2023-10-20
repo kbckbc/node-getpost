@@ -1,2 +1,2 @@
-# node-getpost
-A simple example of how to use GET POST
+# node_getpost
+node basic get, post with Express
