@@ -1,0 +1,33 @@
+<a href="/"> index.html</a>
+<a href="/test"> test.html</a>
+<h1>HOW TO USE NodeJS - test.html</h1>
+<h3>Let's say submitting your student_name and student_num.</h3>
+
+<form action="/query?name=Bob&id_number=11223344">
+  <input type="hidden" name="student_name" value="Bob">
+  <input type="hidden" name="student_num" value="112233">
+  <input type="submit" value="Query string" />
+</form>
+
+<form action="/semantic/Bob/112233">
+  <input type="submit" value="Sematic string" />
+</form>
+
+<form action="/post" method="post">
+  <button type="submit">Post submit</button>
+  student name:<input id="post_student_name" name="student_name"/>
+  student num:<input id="post_student_num" name="student_num"/>
+</form>
+
+<div>
+  <button id="fetch">fetch call</button>
+  student name:<input id="fetch_student_name" name="fetch_student_name"/>
+  student num:<input id="fetch_student_num" name="fetch_student_num"/>
+  <br><br>
+  <textarea id="fetch_result" style="width:300px" disabled></textarea>
+</div>
+  <br>
+  <button id="clear">clear all</button>
+
+
+<script src="/test.js"></script>
